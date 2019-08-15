@@ -6,11 +6,14 @@ from component.user import TTUser
 # def ass(res):
 #     print(res)
 #
-# if __name__ == '__main__':
-    # a = TTBot()
-    # account = a.account
-    # news_spider = a.news_spider
-    # uids = ['50502346173', '4377795668', '3640241275','70105485318','97658287933']
+if __name__ == '__main__':
+    a = TTBot()
+    account = a.account
+    u = TTUser('50502346173')
+    news_spider = a.news_spider
+    uids = ['50502346173', '4377795668', '3640241275','70105485318','97658287933']
+    account.follow_fans_of_user('65445676041',count=200,ALL=False)
+    # print(a.search(f'古天乐',USER=True,strict=True))
     # print(account.wenda_analysis())
     # print(account.delete_article('6602141020383609358'))
     # print(account.unstore_media('6711635660941296132'))
@@ -29,6 +32,7 @@ from component.user import TTUser
     # print(account.delete_wenda_draft('6711665324736905475'))
     # print(account.post_reply('thisisatest','6689315272605565452','6689386720494043147','86931246069'))
     # print(account.unfollow_followings_of_user('4377795668',count=20,ALL=False))
+
     # print(account.unfollow_users(uids))
     # news_spider.get_recommend_news(last_time='2019-07-07 10:50:00',MDB=1)
     # a.search('Gucci',MDB=1,USER=True)
@@ -77,7 +81,7 @@ from component.user import TTUser
     # u.get_followings(ALL=True,MDB=1)
     # a.login()
     # a.login_helper.stop()
-    # a.search('Java',MDB=1)
+
     # a.get_regimen_news(MDB=1, ALL=True)
     # account.unfollow_user('92961638858')
     # account.get_posted_articles(MDB=1)
