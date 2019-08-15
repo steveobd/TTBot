@@ -58,8 +58,8 @@ class SliderHelper:
         username_input = self.driver.find_element_by_id(USERNAME_ID)
         password_input = self.driver.find_element_by_id(PASSWORD_ID)
         login_button = self.driver.find_element_by_id(LOGIN_BTN_ID)
-        username_input.send_keys(USERNAME)
-        password_input.send_keys(PASSWORD)
+        username_input.send_keys(self.username)
+        password_input.send_keys(self.password)
         login_button.click()
         time.sleep(2)
 
