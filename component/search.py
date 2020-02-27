@@ -6,9 +6,11 @@ import time
 from component.log import getLogger
 from component.dbhelper import Database
 from component.sliderlogin import SliderHelper
-from settings import API_SEARCH,HEADERS,URL_SEARCH_TEST
+from settings import API_SEARCH,HEADERS,URL_SEARCH_TEST,\
+    VALIDATE_CLASS,SEARCH_DRAG
 from util.request import send_request
 from util.search import params_for_search
+from bs4 import BeautifulSoup as bs
 from config import SVWEBID,COUNT_SEARCH,SVWEBID_FILE,\
     MAX_RETRY,MONGODB,IMG_S_BIG_PATH,IMG_S_BLOCK_PATH
 
@@ -91,8 +93,12 @@ class Searcher:
         self.slider.init_chrome()
         self.slider.driver.get(URL_SEARCH_TEST)
         time.sleep(2)
-        self.slider._slider_img_download(big_path=IMG_S_BIG_PATH,block_path=IMG_S_BLOCK_PATH)
-        self.slider._validate_and_drag(big_path=IMG_S_BIG_PATH,block_path=IMG_S_BLOCK_PATH)
+        page = bs(self.slider.driver.page_source,'lxml')
+        div = page('div',class_=VALIDATE_CLASS)
+        if not div:
+            return
+        self.slider._slider_img_download(big_path=IMG_S_BIG_PATH,block_path=IMG_S_BLOCK_PATH,CLASSNAME=VALIDATE_CLASS)
+        self.slider._validate_and_drag(big_path=IMG_S_BIG_PATH,block_path=IMG_S_BLOCK_PATH,DRAG=SEARCH_DRAG,TYPE=2)
         cookie = self.slider.driver.get_cookie('s_v_web_id')
         self.headers['cookie'] = f'{cookie.get("name")}={cookie.get("value")}'
         logger.info(f'搜索滑动识别成功，验证cookie:{self.headers["cookie"]}')

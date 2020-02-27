@@ -38,7 +38,7 @@ def send_request(method,
             attempt -= 1
             continue
         if code not in OK_CODE :
-            logger.error(f'[{code}]非正常请求页面.使用代理重试中.')
+            logger.error(f'[{code}]非正常请求页面.使用代理重试中.{url}')
             kwargs['proxies'] = get_proxy()
             proxy_on = True
             attempt -= 1

@@ -9,11 +9,8 @@ from component.user import TTUser
 if __name__ == '__main__':
     a = TTBot()
     account = a.account
-    u = TTUser('50502346173')
     news_spider = a.news_spider
     uids = ['50502346173', '4377795668', '3640241275','70105485318','97658287933']
-    account.follow_fans_of_user('65445676041',count=200,ALL=False)
-    # print(a.search(f'古天乐',USER=True,strict=True))
     # print(account.wenda_analysis())
     # print(account.delete_article('6602141020383609358'))
     # print(account.unstore_media('6711635660941296132'))
@@ -32,7 +29,6 @@ if __name__ == '__main__':
     # print(account.delete_wenda_draft('6711665324736905475'))
     # print(account.post_reply('thisisatest','6689315272605565452','6689386720494043147','86931246069'))
     # print(account.unfollow_followings_of_user('4377795668',count=20,ALL=False))
-
     # print(account.unfollow_users(uids))
     # news_spider.get_recommend_news(last_time='2019-07-07 10:50:00',MDB=1)
     # a.search('Gucci',MDB=1,USER=True)
@@ -67,7 +63,7 @@ if __name__ == '__main__':
     # a.grab_all_user_posts('all')
     # u = TTUser('3564799576')
     # u.get_fans(MDB=True)
-    # print(u.info)
+    # print(account.account_status)
     # u.get_published(ALL=True,MDB=1,MODE='2')
     # u.get_followings(MDB=1)
     # u.get_published(ALL=True,MDB=1,MODE='0')
@@ -81,7 +77,7 @@ if __name__ == '__main__':
     # u.get_followings(ALL=True,MDB=1)
     # a.login()
     # a.login_helper.stop()
-
+    # a.search('Java',MDB=1)
     # a.get_regimen_news(MDB=1, ALL=True)
     # account.unfollow_user('92961638858')
     # account.get_posted_articles(MDB=1)
@@ -99,7 +95,7 @@ if __name__ == '__main__':
     # print(account.post_comment('为习主席点赞[赞][赞][赞][玫瑰][玫瑰][玫瑰]','6707502309561074180'))
     # print(account.post_reply('赞赞','6707502309561074180','6707523403937185803','95480041731','6707601855809487000'))
     # print(account.unstore_media('6707502309561074180'))
-    # print(account.user_info)
+    print(account.user_info)
     # print(account.media_id)
     # print(account.media_info)
     # news_spider.get_discovery_news(MDB=1)

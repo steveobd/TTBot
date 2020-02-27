@@ -1,4 +1,6 @@
 #coding:utf-8
+## 滑块微调距离
+SLIDER_DEBUG = 25
 
 # ------ 用户账户设置 ------
 #今日头条账户密码
@@ -126,7 +128,7 @@ PROXY_ENABLE = True
 # 4.  "username:password@www.dailiurl.com/path/xxxx"
 PROXY = ''
 #代理池，此处用的是一次一个，每次不同,示例代理链接，请自行替换自己的代理url
-PROXY_POOL = 'https://xxx.com/proxy/get?token=xx&amount=1&proxy_type=http&format=txt&splitter=rn&expire=300'
+PROXY_POOL = ''
 
 # ------ HTTP请求相关设置 ------
 #请求失败后的重试次数：

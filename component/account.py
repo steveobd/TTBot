@@ -1646,10 +1646,9 @@ class TTAcount:
                                   no_weitt=False,
                                   count=COUNT_FOLLOWING,
                                   ALL=True,
-                                  MDB=False,
                                   ):
         user = TTUser(uid)
-        followings = user.get_followings(count=count,ALL=ALL,MDB=MDB)
+        followings = user.get_followings(count=count,ALL=ALL)
         uids = [i.get('user_id') for i in followings]
         self.follow_users(uids,
                           skip_no_fans=skip_no_fans,
@@ -1666,51 +1665,10 @@ class TTAcount:
                                     no_weitt=False,
                                     count=COUNT_FOLLOWING,
                                     ALL=True,
-                                    MDB=False,
                                     ):
         user = TTUser(uid)
-        followings = user.get_followings(count=count, ALL=ALL,MDB=MDB)
+        followings = user.get_followings(count=count, ALL=ALL)
         uids = [i['user_id'] for i in followings if i.get('user_id')]
-        self.unfollow_users(uids,
-                            only_no_fans=only_no_fans,
-                            only_no_followings=only_no_followings,
-                          no_articles=no_articles,
-                          no_videos=no_videos,
-                          no_weitt=no_weitt)
-
-    def follow_fans_of_user(self,uid,
-                                  skip_no_fans=False,
-                                  skip_no_followings=False,
-                                  no_articles=False,
-                                  no_videos=False,
-                                  no_weitt=False,
-                                  count=COUNT_FOLLOWING,
-                                  ALL=True,
-                                  MDB=False,
-                                  ):
-        user = TTUser(uid)
-        fans = user.get_fans(count=count,ALL=ALL,MDB=MDB)
-        uids = [i.get('user_id') for i in fans]
-        self.follow_users(uids,
-                          skip_no_fans=skip_no_fans,
-                          skip_no_followings=skip_no_followings,
-                          no_articles=no_articles,
-                          no_videos=no_videos,
-                          no_weitt=no_weitt)
-
-    def unfollow_fans_of_user(self,uid,
-                                    only_no_fans=False,
-                                    only_no_followings=False,
-                                    no_articles=False,
-                                    no_videos=False,
-                                    no_weitt=False,
-                                    count=COUNT_FOLLOWING,
-                                    ALL=True,
-                                    MDB=False,
-                                    ):
-        user = TTUser(uid)
-        fans = user.get_fans(count=count, ALL=ALL,MDB=MDB)
-        uids = [i['user_id'] for i in fans if i.get('user_id')]
         self.unfollow_users(uids,
                             only_no_fans=only_no_fans,
                             only_no_followings=only_no_followings,
