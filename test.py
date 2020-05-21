@@ -30,7 +30,7 @@ if __name__ == '__main__':
     # print(account.post_reply('thisisatest','6689315272605565452','6689386720494043147','86931246069'))
     # print(account.unfollow_followings_of_user('4377795668',count=20,ALL=False))
     # print(account.unfollow_users(uids))
-    # news_spider.get_recommend_news(last_time='2019-07-07 10:50:00',MDB=1)
+    # news_spider.get_recommend_news(last_time='2019-07-07 10:50:00',MDB=0)
     # a.search('Gucci',MDB=1,USER=True)
     # a.interact_with_users(['68164853722'],comment_on_article=True,comment_txt='新的评论',comment_count=2,repost_on_article=True,repost_txt='新的转发',repost_count=1)
     # a.timer.setup(
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     # news_spider.get_recommend_news(MDB=1,ALL=1)
     # a.grab_all_user_posts('all')
     # u = TTUser('3564799576')
-    # u.get_fans(MDB=True)
+    # u.get_fans(MDB=0)
     # print(account.account_status)
     # u.get_published(ALL=True,MDB=1,MODE='2')
     # u.get_followings(MDB=1)
@@ -91,11 +91,11 @@ if __name__ == '__main__':
     # print(account.repost('转发并评论','6689315272605565452','6636211626'))
     # print(account.delete_media('6711667304335802382',comment=True))
     # print(account.delete_media('1638551478768651'))
-    # print(account.post_question('这是测试悟空问答问题','这是描述问题的内容',image=cc))
+    # print(account.post_question('这是测试悟空问答问题','这是描述问题的内容'))
     # print(account.post_comment('为习主席点赞[赞][赞][赞][玫瑰][玫瑰][玫瑰]','6707502309561074180'))
     # print(account.post_reply('赞赞','6707502309561074180','6707523403937185803','95480041731','6707601855809487000'))
     # print(account.unstore_media('6707502309561074180'))
-    print(account.user_info)
+    print( account.user_info)
     # print(account.media_id)
     # print(account.media_info)
     # news_spider.get_discovery_news(MDB=1)
@@ -135,7 +135,7 @@ if __name__ == '__main__':
     # print(account.hide_article('6709615853203096071','1562204177'))
     # print(account.unhide_article('6709615853203096071', '1562204177'))
     # print(account.get_sensitive_op_log())
-    # print(account.get_login_log(page=2))
+    # print(account.get_login_log(page=1))
     # print(account.post_article('I robot sssss ',
     #                            u'''<div><p>不少人都曾抱怨过，为什么付出了那么多，还是没有看到自己身上增了多少肌肉量？
     #                            </p><p><strong>是不是自己没有健身天赋造成的？</strong></p>

@@ -96,7 +96,6 @@ class SliderHelper:
             soup = bs(self.driver.page_source,'lxml')
             wrapper = soup('div',class_=DRAG) if TYPE==1 else soup('img',class_=DRAG)
             if  wrapper:
-                print(soup)
                 logger.info(f'识别错误，滑动失败.重新滑动')
                 time.sleep(3)
                 self._slider_img_download(big_path,block_path,DOWN)
