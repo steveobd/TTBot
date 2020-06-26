@@ -7,8 +7,8 @@ from ttbot.component.timer import Timer
 from ttbot.component.news import TTNews
 from ttbot.component.user import TTUser
 from ttbot.component.grabber import UserGrabber
-from config import COUNT_SEARCH,SVWEBID_FILE,SVWEBID
-from settings import ARTICLE,VIDEO,WEITT
+from ttbot.config import COUNT_SEARCH,SVWEBID_FILE,SVWEBID
+from ttbot.settings import ARTICLE,VIDEO,WEITT
 from ttbot.util.tools import time_to_date
 from ttbot.util.user import weitt_cleaner
 

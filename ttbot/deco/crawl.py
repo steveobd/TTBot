@@ -2,7 +2,7 @@
 
 from ttbot.component.dbhelper import Database
 from ttbot.component.log import getLogger
-from config import COUNT_HOTNEWS,MAX_RETRY,MONGODB
+from ttbot.config import COUNT_HOTNEWS,MAX_RETRY,MONGODB
 from ttbot.util.request import send_request
 from inspect import isfunction
 

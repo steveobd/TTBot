@@ -7,8 +7,8 @@ from ttbot.component.dbhelper import Database
 from ttbot.deco.crawl import crawl_helper,choose
 from ttbot.util.news import params_for_news,data_cleaner
 from ttbot.util.tools import time_to_date
-from config import COUNT_HOTNEWS,MONGODB
-from settings import API_NEWS_FEED,HEADERS,URL_HOST
+from ttbot.config import COUNT_HOTNEWS,MONGODB
+from ttbot.settings import API_NEWS_FEED,HEADERS,URL_HOST
 
 class TTNews:
 

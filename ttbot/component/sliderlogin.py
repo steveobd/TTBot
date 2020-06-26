@@ -4,7 +4,7 @@ import time
 import cv2
 import copy
 
-from settings import *
+from ttbot.settings import *
 from ttbot.deco.login import inited
 from selenium import webdriver
 from ttbot.component.log import getLogger
@@ -12,7 +12,7 @@ from ttbot.util.tools import format_cookies
 from ttbot.util.slider import download_img,drag_and_drop,save_cookie
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup as bs
-from config import CHROME_PATH,USERNAME,PASSWORD,\
+from ttbot.config import CHROME_PATH,USERNAME,PASSWORD,\
     IMG_BIG_PATH,IMG_BLOCK_PATH,COOKIE_FILE,SLIDER_DEBUG
 
 logger = getLogger(__name__)

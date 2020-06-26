@@ -1,7 +1,7 @@
 #coding:utf-8
 
-from config import *
-from settings import *
+from ttbot.config import *
+from ttbot.settings import *
 from ttbot.util.tools import *
 from ttbot.component.log import getLogger
 from ttbot.component.dbhelper import Database

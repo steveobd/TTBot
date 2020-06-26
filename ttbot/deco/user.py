@@ -4,9 +4,9 @@ from ttbot.util.user import *
 from copy import deepcopy
 from ttbot.component.log import getLogger
 from ttbot.component.dbhelper import Database
-from config import MONGODB,MAX_RETRY
-from util.request import send_request
-from settings import  HEADERS_USER_ARTICLE,MODE_MAP,\
+from ttbot.config import MONGODB,MAX_RETRY
+from ttbot.util.request import send_request
+from ttbot.settings import  HEADERS_USER_ARTICLE,MODE_MAP,\
     API_USER_WEITT,API_USER_ARTICLE,HEADERS,APIS
 
 logger = getLogger(__name__)

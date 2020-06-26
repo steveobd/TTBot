@@ -2,8 +2,8 @@
 import time
 import queue
 
-from config import *
-from settings import ARTICLE,VIDEO,WEITT
+from ttbot.config import *
+from ttbot.settings import ARTICLE,VIDEO,WEITT
 from ttbot.component.log import getLogger
 from ttbot.component.dbhelper import Database
 from ttbot.component.user import TTUser

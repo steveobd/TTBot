@@ -2,8 +2,7 @@
 
 import time
 import requests
-from config import *
-from settings import URL_HOST,HEADERS
+from ttbot.config import *
 from ttbot.util.proxy import get_proxy
 from ttbot.component.log import getLogger
 

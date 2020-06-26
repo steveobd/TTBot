@@ -6,20 +6,20 @@ import time
 import requests
 import validators
 
-from config import *
-from settings import *
+from ttbot.config import *
+from ttbot.settings import *
 from copy import deepcopy
-from util.jstool import signature_func
-from util.tools import time_to_date
-from util.account import articles_cleaner
+from ttbot.util.jstool import signature_func
+from ttbot.util.tools import time_to_date
+from ttbot.util.account import articles_cleaner
 from urllib3 import encode_multipart_formdata
-from deco.crawl import crawl_helper
-from deco.toutiao import check,login_required,action
-from component.sliderlogin import SliderHelper
-from component.user import TTUser
-from component.dbhelper import Database
-from component.log import getLogger
-from util.account import params_for_favourite,\
+from ttbot.deco.crawl import crawl_helper
+from ttbot.deco.toutiao import check,login_required,action
+from ttbot.component.sliderlogin import SliderHelper
+from ttbot.component.user import TTUser
+from ttbot.component.dbhelper import Database
+from ttbot.component.log import getLogger
+from ttbot.util.account import params_for_favourite,\
     favourite_cleaner,videos_cleaner
 
 logger = getLogger(__name__)

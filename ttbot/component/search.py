@@ -6,12 +6,12 @@ import time
 from ttbot.component.log import getLogger
 from ttbot.component.dbhelper import Database
 from ttbot.component.sliderlogin import SliderHelper
-from settings import API_SEARCH,HEADERS,URL_SEARCH_TEST,\
+from ttbot.settings import API_SEARCH,HEADERS,URL_SEARCH_TEST,\
     VALIDATE_CLASS,SEARCH_DRAG
 from ttbot.util.request import send_request
 from ttbot.util.search import params_for_search
 from bs4 import BeautifulSoup as bs
-from config import SVWEBID,COUNT_SEARCH,SVWEBID_FILE,\
+from ttbot.config import SVWEBID,COUNT_SEARCH,SVWEBID_FILE,\
     MAX_RETRY,MONGODB,IMG_S_BIG_PATH,IMG_S_BLOCK_PATH
 
 logger = getLogger(__name__)

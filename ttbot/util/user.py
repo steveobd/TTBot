@@ -4,7 +4,7 @@ import json
 
 from ttbot.util.tools import time_to_date
 from ttbot.util.jstool import py_to_js
-from settings import URL_HOST,URL_ARTICLE_ITEM,\
+from ttbot.settings import URL_HOST,URL_ARTICLE_ITEM,\
     F_PARAMS,signature_js_path,signature_js_func
 
 def published_data_cleaner(item):

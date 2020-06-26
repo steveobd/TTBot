@@ -1,6 +1,6 @@
 #coding:utf-8
 import sys
-import config
+from ttbot import config
 import logging
 
 __all__ = ['getLogger']

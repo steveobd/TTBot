@@ -3,7 +3,7 @@ import time
 import math
 import hashlib
 from functools import partial
-from settings import signature_js_func,signature_js_path
+from ttbot.settings import signature_js_func,signature_js_path
 
 def get_js(js_file_path,mode='r'):
 	"""

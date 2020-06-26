@@ -3,7 +3,7 @@
 import os
 import random
 import requests
-from config import *
+from ttbot.config import *
 from w3lib.url import is_url
 
 def gen_proxy(proxy):
