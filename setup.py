@@ -1,7 +1,7 @@
 from setuptools import setup
 
 PACKAGES = [
-    "TTBot"
+    "ttbot"
 ]
 
 setup(name='TTBot',

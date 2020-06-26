@@ -1,7 +1,7 @@
 #coding:utf-8
 
 import time
-from deco import force_type
+from ttbot.deco import force_type
 
 @force_type({'tab':int})
 def params_for_search(keyword,tab=1,offset=0,count=20):

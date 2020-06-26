@@ -2,9 +2,9 @@
 
 import os
 
-from component.log import getLogger
-from component.dbhelper import Database
-from util.request import send_request
+from ttbot.component.log import getLogger
+from ttbot.component.dbhelper import Database
+from ttbot.util.request import send_request
 from config import COOKIE_FILE,COOKIE
 from inspect import isfunction
 

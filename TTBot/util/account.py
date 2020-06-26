@@ -2,8 +2,8 @@
 
 import json
 
-from util.jstool import py_to_js,get_ascp
-from util.tools import time_to_date
+from ttbot.util.jstool import py_to_js,get_ascp
+from ttbot.util.tools import time_to_date
 from settings import signature_js_path,signature_js_func,URL_HOST
 
 def params_for_favourite(max_repin_time,uid=''):

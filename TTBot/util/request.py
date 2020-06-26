@@ -4,8 +4,8 @@ import time
 import requests
 from config import *
 from settings import URL_HOST,HEADERS
-from util.proxy import get_proxy
-from component.log import getLogger
+from ttbot.util.proxy import get_proxy
+from ttbot.component.log import getLogger
 
 logger = getLogger(__name__)
 
