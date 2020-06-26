@@ -145,7 +145,7 @@ OK_CODE = [200,]
 
 # ------ 日志设置 ------
 #启用日志
-LOG_ENABLE = True
+LOG_ENABLE = False
 #日志显示级别
 LOG_LEVEL = 'INFO'
 #日志文件编码
