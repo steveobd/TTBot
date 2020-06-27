@@ -1,11 +1,7 @@
-from setuptools import setup
-
-PACKAGES = [
-    "ttbot"
-]
+from setuptools import setup,find_packages
 
 setup(name='TTBot',
-        packages=PACKAGES,
+        packages=find_packages(include=['ttbot', 'ttbot.*']),
         version='3.0',
         author='01ly',
         author_email='apisite@126.com',
