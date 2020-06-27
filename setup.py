@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(name='TTBot',
         packages=find_packages(include=['ttbot', 'ttbot.*']),
-        version='3.0',
+        version='3.1',
         author='01ly',
         author_email='apisite@126.com',
         description="TTBot",
