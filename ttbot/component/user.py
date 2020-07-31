@@ -176,3 +176,7 @@ class TTUser:
             'MDB':MDB,
             'ALL':ALL,
         }
+
+if __name__ == '__main__':
+    user = TTUser('99229017134')
+    print(user.info)

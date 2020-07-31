@@ -27,9 +27,13 @@ def dict_str_to_json(src):
     _ = []
     src = re.sub('[{}]','',src)
     for item in src.split(','):
-        a,b = item.split(':')
+        if len(item.split(':')) == 3:
+            a,b,c = item.split(':')
+            b += ':' + c
+        else:
+            a,b = item.split(':')
         _.append('"'+a+'"'+":"+b)
-    res  = '{'+','.join(_)+'}'
+    res = '{'+','.join(_)+'}'
     res = json.loads(res)
     return res
 
